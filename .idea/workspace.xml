@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="fix bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com.udacity.catpoint/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com.udacity.catpoint/service/AwsImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/AwsImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com.udacity.catpoint/service/FakeImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/FakeImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/test/java/com.udacity.catpoint/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/AwsImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/AwsImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/FakeImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/FakeImageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/CatpointApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ControlPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/DisplayPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ImagePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/SensorPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/application/StatusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/StatusListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/AlarmStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/AlarmStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/ArmingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/ArmingStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/PretendDatabaseSecurityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/PretendDatabaseSecurityRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/SecurityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/data/SensorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/data/SensorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com.udacity.catpoint/service/StyleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/StyleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/test/java/com.udacity.catpoint/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,48 +47,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/JiaqiZhao/IdeaProjects/UdaSecurity/Security/src/test/java/com.udacity.catpoint"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JiaqiZhao/IdeaProjects/UdaSecurity/Security/src/test/java/com.udacity.catpoint&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JiaqiZhao\IdeaProjects\UdaSecurity\Security\src\test\java\com.udacity.catpoint" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CatpointApp">
-    <configuration name="CatpointApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.udacity.security.application.CatpointApp" />
+  <component name="RunManager" selected="Maven.catpoint-parent [site]">
+    <configuration name="TestSecurityService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.security.application.*" />
+          <option name="PATTERN" value="com.udacity.security.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Security" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.catpoint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.catpoint" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.catpoint.AppTest" />
+      <option name="PACKAGE_NAME" value="com.udacity.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.security.service.TestSecurityService" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="TestSecurityService.coverDeactivate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.security.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.security.service.TestSecurityService" />
+      <option name="METHOD_NAME" value="coverDeactivate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSecurityService.testHandleSensorDeactivated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.security.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.security.service" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.security.service.TestSecurityService" />
+      <option name="METHOD_NAME" value="testHandleSensorDeactivated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Security-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Security/target/Security-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="UdaSecurity" />
@@ -120,10 +126,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="catpoint-parent [site]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="site" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CatpointApp" />
-        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Maven.catpoint-parent [site]" />
+        <item itemvalue="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+        <item itemvalue="JUnit.TestSecurityService" />
+        <item itemvalue="JUnit.TestSecurityService.testHandleSensorDeactivated" />
+        <item itemvalue="JUnit.TestSecurityService.coverDeactivate" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +170,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669232679962</updated>
     </task>
+    <task id="LOCAL-00001" summary="update pom and unit test case">
+      <created>1669265640033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669265640033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,5 +190,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update pom and unit test case" />
+    <MESSAGE value="update unit case" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService.ic" NAME="TestSecurityService Coverage Results" MODIFIED="1669329452898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.udacity.security.service.*</FILTER>
+    </SUITE>
   </component>
 </project>

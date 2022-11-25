@@ -89,7 +89,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        application.CatpointApp
+                                        com.udacity.security.application.CatpointApp
                                     </mainClass>
                                 </manifest>
                             </archive>

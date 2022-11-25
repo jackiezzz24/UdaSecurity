@@ -1,5 +1,6 @@
 package com.udacity.security.application;
 
+import com.udacity.image.service.ImageService;
 import com.udacity.security.service.SecurityService;
 import com.udacity.security.data.PretendDatabaseSecurityRepositoryImpl;
 import com.udacity.security.data.SecurityRepository;

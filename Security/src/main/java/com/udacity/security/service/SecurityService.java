@@ -1,11 +1,11 @@
 package com.udacity.security.service;
 
+import com.udacity.image.service.ImageService;
 import com.udacity.security.data.Sensor;
 import com.udacity.security.application.StatusListener;
 import com.udacity.security.data.AlarmStatus;
 import com.udacity.security.data.ArmingStatus;
 import com.udacity.security.data.SecurityRepository;
-import com.udacity.image.service.FakeImageService;
 
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
@@ -20,11 +20,12 @@ import java.util.Set;
  */
 public class SecurityService {
 
-    private FakeImageService imageService;
+    private ImageService imageService;
     private SecurityRepository securityRepository;
     private Set<StatusListener> statusListeners = new HashSet<>();
+    private boolean catDection = false;
 
-    public SecurityService(SecurityRepository securityRepository, FakeImageService imageService) {
+    public SecurityService(SecurityRepository securityRepository, ImageService imageService) {
         this.securityRepository = securityRepository;
         this.imageService = imageService;
     }
@@ -35,10 +36,17 @@ public class SecurityService {
      * @param armingStatus
      */
     public void setArmingStatus(ArmingStatus armingStatus) {
+        if (catDection && armingStatus == ArmingStatus.ARMED_HOME) {
+            setAlarmStatus(AlarmStatus.ALARM);
+        }
         if(armingStatus == ArmingStatus.DISARMED) {
             setAlarmStatus(AlarmStatus.NO_ALARM);
+        } else {
+            Set<Sensor> sensors = new HashSet<>();
+            sensors.forEach(sensor -> changeSensorActivationStatus(sensor, false));
         }
         securityRepository.setArmingStatus(armingStatus);
+        statusListeners.forEach(sl -> sl.sensorStatusChanged());
     }
 
     /**
@@ -47,9 +55,10 @@ public class SecurityService {
      * @param cat True if a cat is detected, otherwise false.
      */
     private void catDetected(Boolean cat) {
+        catDection = cat;
         if(cat && getArmingStatus() == ArmingStatus.ARMED_HOME) {
             setAlarmStatus(AlarmStatus.ALARM);
-        } else {
+        } else if (!catDection && getSensors().stream().allMatch(sensor -> sensor.getActive() == false)){
             setAlarmStatus(AlarmStatus.NO_ALARM);
         }
 
@@ -106,12 +115,25 @@ public class SecurityService {
      * @param active
      */
     public void changeSensorActivationStatus(Sensor sensor, Boolean active) {
-        if(!sensor.getActive() && active) {
-            handleSensorActivated();
-        } else if (sensor.getActive() && !active) {
-            handleSensorDeactivated();
+        AlarmStatus alarmStatus = securityRepository.getAlarmStatus();
+        if(alarmStatus != AlarmStatus.ALARM) {
+            if (!sensor.getActive() && active) {
+                handleSensorActivated();
+            } else if (sensor.getActive() && !active) {
+                handleSensorDeactivated();
+            }
         }
         sensor.setActive(active);
+        securityRepository.updateSensor(sensor);
+    }
+
+    public void changeSensorActivationStatus(Sensor sensor) {
+        AlarmStatus alarmStatus = this.getAlarmStatus();
+        ArmingStatus armingStatus = this.getArmingStatus();
+
+        if(alarmStatus != AlarmStatus.PENDING_ALARM && !sensor.getActive()) {
+            handleSensorDeactivated();
+        }
         securityRepository.updateSensor(sensor);
     }
 
