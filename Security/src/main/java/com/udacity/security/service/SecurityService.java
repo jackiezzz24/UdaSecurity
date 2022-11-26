@@ -105,7 +105,6 @@ public class SecurityService {
     private void handleSensorDeactivated() {
         switch(securityRepository.getAlarmStatus()) {
             case PENDING_ALARM -> setAlarmStatus(AlarmStatus.NO_ALARM);
-            case ALARM -> setAlarmStatus(AlarmStatus.PENDING_ALARM);
         }
     }
 
@@ -124,16 +123,6 @@ public class SecurityService {
             }
         }
         sensor.setActive(active);
-        securityRepository.updateSensor(sensor);
-    }
-
-    public void changeSensorActivationStatus(Sensor sensor) {
-        AlarmStatus alarmStatus = this.getAlarmStatus();
-        ArmingStatus armingStatus = this.getArmingStatus();
-
-        if(alarmStatus != AlarmStatus.PENDING_ALARM && !sensor.getActive()) {
-            handleSensorDeactivated();
-        }
         securityRepository.updateSensor(sensor);
     }
 

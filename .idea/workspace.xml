@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="fix bugs">
+    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="updata unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/AwsImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/AwsImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/FakeImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/FakeImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/CatpointGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/test/java/com/udacity/security/service/TestSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/test/java/com/udacity/security/service/TestSecurityService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <recent name="C:\Users\JiaqiZhao\IdeaProjects\UdaSecurity\Security\src\test\java\com.udacity.catpoint" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.catpoint-parent [site]">
+  <component name="RunManager" selected="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar">
     <configuration name="TestSecurityService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Security" />
       <extension name="coverage">
@@ -77,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSecurityService.coverDeactivate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSecurityService.alarmAndSensorActivated_setPending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Security" />
       <extension name="coverage">
         <pattern>
@@ -87,13 +83,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.udacity.security.service" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.security.service.TestSecurityService" />
-      <option name="METHOD_NAME" value="coverDeactivate" />
+      <option name="METHOD_NAME" value="alarmAndSensorActivated_setPending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSecurityService.testHandleSensorDeactivated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSecurityService.sensorInactivatedAndAlarm_setPending" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Security" />
       <extension name="coverage">
         <pattern>
@@ -103,7 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.udacity.security.service" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.security.service.TestSecurityService" />
-      <option name="METHOD_NAME" value="testHandleSensorDeactivated" />
+      <option name="METHOD_NAME" value="sensorInactivatedAndAlarm_setPending" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.catpoint-parent [site]" />
         <item itemvalue="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.TestSecurityService" />
-        <item itemvalue="JUnit.TestSecurityService.testHandleSensorDeactivated" />
-        <item itemvalue="JUnit.TestSecurityService.coverDeactivate" />
+        <item itemvalue="JUnit.TestSecurityService.sensorInactivatedAndAlarm_setPending" />
+        <item itemvalue="JUnit.TestSecurityService.alarmAndSensorActivated_setPending" />
+        <item itemvalue="Maven.catpoint-parent [site]" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669265640033</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix bugs and generate spotbugs.html">
+      <created>1669368194889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669368194889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,10 +198,15 @@
     <MESSAGE value="update pom and unit test case" />
     <MESSAGE value="update unit case" />
     <MESSAGE value="fix bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
+    <MESSAGE value="fix bugs and generate spotbugs.html" />
+    <MESSAGE value="updata unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="updata unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService.ic" NAME="TestSecurityService Coverage Results" MODIFIED="1669329452898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService_sensorInactivatedAndAlarm_setPending.ic" NAME="TestSecurityService.sensorInactivatedAndAlarm_setPending Coverage Results" MODIFIED="1669492190329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.udacity.security.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService.ic" NAME="TestSecurityService Coverage Results" MODIFIED="1669493738899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.udacity.security.service.*</FILTER>
     </SUITE>
   </component>
