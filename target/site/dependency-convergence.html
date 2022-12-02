@@ -63,29 +63,234 @@
 <section>
 <h1><a name="Reactor_Dependency_Convergence"></a>Reactor Dependency Convergence</h1>
 <table border="0" class="bodyTable"><caption>
-  <b>Statistics:</b>
+  <b>Legend:</b>
 </caption>
 <tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>At least one dependency has a differing version of the dependency or has SNAPSHOT dependencies.</td></tr></table><br />
+<table border="0" class="bodyTable"><caption>
+  <b>Statistics:</b>
+</caption>
+<tr class="b">
 <th>Number of modules:</th>
 <td>3</td></tr>
-<tr class="b">
+<tr class="a">
 <th>Number of dependencies (NOD):</th>
-<td>64</td></tr>
-<tr class="a">
-<th>Number of unique artifacts (NOA):</th>
-<td>64</td></tr>
+<td>62</td></tr>
 <tr class="b">
-<th>Number of version-conflicting artifacts (NOC):</th>
-<td>0</td></tr>
+<th>Number of unique artifacts (NOA):</th>
+<td>73</td></tr>
 <tr class="a">
+<th>Number of version-conflicting artifacts (NOC):</th>
+<td>11</td></tr>
+<tr class="b">
 <th>Number of SNAPSHOT artifacts (NOS):</th>
 <td>0</td></tr>
-<tr class="b">
-<th>Convergence (NOD/NOA):</th>
-<td><img src="images/icon_success_sml.gif" alt="[Success]" />&#160;<b>100 %</b></td></tr>
 <tr class="a">
+<th>Convergence (NOD/NOA):</th>
+<td><img src="images/icon_error_sml.gif" alt="[Error]" />&#160;<b>84 %</b></td></tr>
+<tr class="b">
 <th>Ready for release (100% convergence and no SNAPSHOTS):</th>
-<td><img src="images/icon_success_sml.gif" alt="[Success]" />&#160;<b>Success</b></td></tr></table></section>
+<td><img src="images/icon_error_sml.gif" alt="[Error]" />&#160;<b>Error</b><br />You do not have 100% convergence.</td></tr></table></section><section>
+<h2><a name="Dependencies_used_in_modules"></a>Dependencies used in modules</h2><section>
+<h3><a name="software.amazon.awssdk:annotations"></a>software.amazon.awssdk:annotations</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:runtime<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:runtime<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.24:runtime<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;+-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:annotations:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:auth"></a>software.amazon.awssdk:auth</h3>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:auth:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:auth:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="b">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:endpoints-spi"></a>software.amazon.awssdk:endpoints-spi</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:endpoints-spi:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:http-client-spi"></a>software.amazon.awssdk:http-client-spi</h3>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:runtime<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:runtime<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.24:runtime<br /></li><br /></ol></td></tr>
+<tr class="b">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:json-utils"></a>software.amazon.awssdk:json-utils</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:metrics-spi"></a>software.amazon.awssdk:metrics-spi</h3>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:runtime<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:runtime<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:runtime<br /></li><br /></ol></td></tr>
+<tr class="b">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:profiles"></a>software.amazon.awssdk:profiles</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:regions"></a>software.amazon.awssdk:regions</h3>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="b">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:sdk-core"></a>software.amazon.awssdk:sdk-core</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:third-party-jackson-core"></a>software.amazon.awssdk:third-party-jackson-core</h3>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:third-party-jackson-core:jar:2.18.24:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:third-party-jackson-core:jar:2.18.24:compile<br /></li><br /></ol></td></tr>
+<tr class="b">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:third-party-jackson-core:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:third-party-jackson-core:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section><section>
+<h3><a name="software.amazon.awssdk:utils"></a>software.amazon.awssdk:utils</h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<td><img src="images/icon_error_sml.gif" alt="[Error]" /></td>
+<td>
+<table border="0" class="bodyTable">
+<tr class="b">
+<td width="25%">2.18.24</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:runtime<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:runtime<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:rekognition:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-json-protocol:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:protocol-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:aws-core:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:metrics-spi:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:apache-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:netty-nio-client:jar:2.18.24:runtime<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.24:runtime<br /></li><br /></ol></td></tr>
+<tr class="a">
+<td width="25%">2.18.25</td>
+<td>
+<ol style="list-style-type: decimal">
+<li>com.udacity.catpoint:Image:jar:1.0-SNAPSHOT<br />\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br /></li><br />
+<li>com.udacity.catpoint:Security:jar:1.0-SNAPSHOT<br />\-&#160;com.udacity.catpoint:Image:jar:1.0-SNAPSHOT:compile<br />&#160;&#160;&#160;\-&#160;software.amazon.awssdk:auth:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:sdk-core:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:regions:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:profiles:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;+-&#160;software.amazon.awssdk:http-client-spi:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:json-utils:jar:2.18.25:compile<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\-&#160;software.amazon.awssdk:utils:jar:2.18.25:compile<br /></li><br /></ol></td></tr></table></td></tr></table></section></section>
       </div>
     </div>
     <div class="clear">

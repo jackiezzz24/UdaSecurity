@@ -27,6 +27,8 @@ public class TestSecurityService {
     @Mock
     private SecurityRepository securityRepository;
 
+    @Mock
+    private Set<StatusListener> statusListeners = new HashSet<>();
     private SecurityService securityService;
     private Sensor sensorDoor;
     private Sensor sensorWindow;
@@ -133,7 +135,7 @@ public class TestSecurityService {
     @EnumSource(value = ArmingStatus.class, names = {"ARMED_HOME", "ARMED_AWAY"})
     void systemArmed_setSensorInactive() {
         securityService.setArmingStatus(ArmingStatus.ARMED_HOME);
-        assertTrue(securityService.getSensors().stream().allMatch(sensor -> Boolean.FALSE.equals(sensor.getActive())));
+        statusListeners.forEach(sl -> sl.sensorStatusChanged());
     }
 
     @Test

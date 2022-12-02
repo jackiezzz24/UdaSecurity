@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="updata unit tests">
+    <list default="true" id="cb02ec49-69bf-4d36-b772-24dddfeeaf01" name="Changes" comment="update unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Image/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/DisplayPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/DisplayPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ImagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/ImagePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/SensorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/application/SensorPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/src/main/java/com/udacity/security/service/StyleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Image/src/main/java/com/udacity/image/service/StyleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Security/src/test/java/com/udacity/security/service/TestSecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Security/src/test/java/com/udacity/security/service/TestSecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/dependency-convergence.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/dependency-convergence.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +64,12 @@
       <recent name="C:\Users\JiaqiZhao\IdeaProjects\UdaSecurity\Security\src\test\java\com.udacity.catpoint" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar">
+  <component name="RunManager" selected="JUnit.TestSecurityService">
     <configuration name="TestSecurityService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.security.service.*" />
+          <option name="PATTERN" value="com.udacity.image.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,7 +84,7 @@
       <module name="Security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.security.service.*" />
+          <option name="PATTERN" value="com.udacity.image.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,7 +100,7 @@
       <module name="Security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.udacity.security.service.*" />
+          <option name="PATTERN" value="com.udacity.image.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.TestSecurityService" />
+        <item itemvalue="JAR Application.Security-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="JUnit.TestSecurityService.sensorInactivatedAndAlarm_setPending" />
         <item itemvalue="JUnit.TestSecurityService.alarmAndSensorActivated_setPending" />
         <item itemvalue="Maven.catpoint-parent [site]" />
@@ -180,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669368194889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update unit tests">
+      <created>1669498494350</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669498494350</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,13 +214,14 @@
     <MESSAGE value="fix bugs" />
     <MESSAGE value="fix bugs and generate spotbugs.html" />
     <MESSAGE value="updata unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="updata unit tests" />
+    <MESSAGE value="update unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="update unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService_sensorInactivatedAndAlarm_setPending.ic" NAME="TestSecurityService.sensorInactivatedAndAlarm_setPending Coverage Results" MODIFIED="1669492190329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.udacity.security.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService.ic" NAME="TestSecurityService Coverage Results" MODIFIED="1669493738899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/UdaSecurity$TestSecurityService.ic" NAME="TestSecurityService Coverage Results" MODIFIED="1670002486402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.udacity.security.service.*</FILTER>
     </SUITE>
   </component>
